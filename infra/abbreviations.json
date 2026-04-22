@@ -1,0 +1,12 @@
+{
+  "resourceGroup": "rg-",
+  "appServicePlan": "asp-",
+  "appService": "app-",
+  "staticWebApp": "swa-",
+  "sqlServer": "sql-",
+  "sqlDatabase": "sqldb-",
+  "keyVault": "kv-",
+  "logAnalyticsWorkspace": "log-",
+  "applicationInsights": "appi-",
+  "userAssignedIdentity": "id-"
+}

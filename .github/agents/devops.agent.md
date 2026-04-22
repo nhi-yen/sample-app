@@ -1,8 +1,22 @@
 ---
 description: "Use when: authoring or reviewing Azure Infrastructure as Code (Bicep), GitHub Actions CI/CD pipelines, or Git commit messages and PR titles. Handles IaC creation, pipelines as code, and commit/PR conventions. Trigger phrases: bicep, iac, infra, azure resources, main.bicep, bicepparam, AVM, azd, github actions, workflow, CI, CD, pipeline, deploy, OIDC, reusable workflow, commit message, conventional commit, PR title."
 name: "DevOps"
-tools: [read, edit, search, execute, todo, azure/*, bicep/*, github/*]
-user-invocable: false
+tools:
+  [
+    vscode/askQuestions,
+    execute,
+    read,
+    edit,
+    search,
+    "github/*",
+    "azure-mcp/*",
+    "bicep/*",
+    "com.microsoft/azure/*",
+    "github/*",
+    "github/*",
+    todo,
+  ]
+user-invocable: true
 ---
 
 You are a DevOps specialist. You write and review three things:

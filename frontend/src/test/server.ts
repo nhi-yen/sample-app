@@ -1,5 +1,11 @@
 import { setupServer } from 'msw/node'
-import { handlers, notesStore, defaultSeed } from './handlers'
+import {
+    defaultAuthStore,
+    defaultSeed,
+    handlers,
+    notesStore,
+    seedAuthStore,
+} from './handlers'
 
 export const server = setupServer(...handlers)
 
@@ -7,4 +13,8 @@ export function resetNotesStore(): void {
     notesStore.reset(defaultSeed)
 }
 
-export { notesStore, defaultSeed }
+export function resetAuthStore(): void {
+    seedAuthStore(defaultAuthStore)
+}
+
+export { notesStore, defaultSeed, defaultAuthStore }

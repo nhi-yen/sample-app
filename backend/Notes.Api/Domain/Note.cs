@@ -7,4 +7,5 @@ public sealed class Note
     public string Content { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
+    public string OwnerId { get; set; } = default!;
 }

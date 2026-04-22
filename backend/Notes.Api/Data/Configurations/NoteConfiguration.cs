@@ -14,5 +14,12 @@ public sealed class NoteConfiguration : IEntityTypeConfiguration<Note>
         builder.Property(n => n.Content).IsRequired();
         builder.Property(n => n.CreatedAt).IsRequired();
         builder.Property(n => n.UpdatedAt).IsRequired();
+        builder.Property(n => n.OwnerId).IsRequired();
+        builder.HasIndex(n => n.OwnerId);
+        builder
+            .HasOne<ApplicationUser>()
+            .WithMany()
+            .HasForeignKey(n => n.OwnerId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

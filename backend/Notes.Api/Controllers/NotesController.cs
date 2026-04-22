@@ -1,3 +1,6 @@
+using System.Security.Claims;
+
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,15 +11,21 @@ using Notes.Api.Domain;
 namespace Notes.Api.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
 public sealed class NotesController(NotesDbContext db) : ControllerBase
 {
+    private string CurrentUserId =>
+        User.FindFirstValue(ClaimTypes.NameIdentifier) ?? throw new UnauthorizedAccessException();
+
     [HttpGet]
     [ProducesResponseType<List<NoteDto>>(StatusCodes.Status200OK)]
     public async Task<ActionResult<List<NoteDto>>> GetAll(CancellationToken ct)
     {
+        var userId = CurrentUserId;
         var notes = await db.Notes
             .AsNoTracking()
+            .Where(n => n.OwnerId == userId)
             .OrderByDescending(n => n.UpdatedAt)
             .Select(n => new NoteDto(n.Id, n.Title, n.Content, n.CreatedAt, n.UpdatedAt))
             .ToListAsync(ct);
@@ -29,9 +38,10 @@ public sealed class NotesController(NotesDbContext db) : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<NoteDto>> GetById(Guid id, CancellationToken ct)
     {
+        var userId = CurrentUserId;
         var note = await db.Notes
             .AsNoTracking()
-            .Where(n => n.Id == id)
+            .Where(n => n.Id == id && n.OwnerId == userId)
             .Select(n => new NoteDto(n.Id, n.Title, n.Content, n.CreatedAt, n.UpdatedAt))
             .FirstOrDefaultAsync(ct);
 
@@ -50,7 +60,8 @@ public sealed class NotesController(NotesDbContext db) : ControllerBase
             Title = request.Title,
             Content = request.Content,
             CreatedAt = now,
-            UpdatedAt = now
+            UpdatedAt = now,
+            OwnerId = CurrentUserId
         };
 
         db.Notes.Add(note);
@@ -66,7 +77,8 @@ public sealed class NotesController(NotesDbContext db) : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<NoteDto>> Update(Guid id, UpdateNoteRequest request, CancellationToken ct)
     {
-        var note = await db.Notes.FirstOrDefaultAsync(n => n.Id == id, ct);
+        var userId = CurrentUserId;
+        var note = await db.Notes.FirstOrDefaultAsync(n => n.Id == id && n.OwnerId == userId, ct);
         if (note is null)
         {
             return NotFound();
@@ -86,7 +98,8 @@ public sealed class NotesController(NotesDbContext db) : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(Guid id, CancellationToken ct)
     {
-        var note = await db.Notes.FirstOrDefaultAsync(n => n.Id == id, ct);
+        var userId = CurrentUserId;
+        var note = await db.Notes.FirstOrDefaultAsync(n => n.Id == id && n.OwnerId == userId, ct);
         if (note is null)
         {
             return NotFound();
