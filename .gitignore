@@ -2,6 +2,11 @@ backend/Notes.Api/notes.db
 backend/Notes.Api/notes.db-shm
 backend/Notes.Api/notes.db-wal
 
+# Local development configuration and secrets
+**/appsettings.Development.json
+**/secrets.json
+**/.microsoft/usersecrets/
+
 # Compiled Bicep (ARM JSON) artifacts
 infra/**/*.json
 !infra/abbreviations.json

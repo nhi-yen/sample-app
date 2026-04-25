@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>de662dcd-c312-4f11-b5fa-a42ea1f39ffe</id>
+  <author>N/A</author>
+  <deployer>OneDeploy</deployer>
+  <authorEmail>N/A</authorEmail>
+  <message>OneDeploy</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2026-04-25T02:14:24.0077768Z</lastSuccessEndTime>
+  <receivedTime>2026-04-25T02:14:18.4696155Z</receivedTime>
+  <startTime>2026-04-25T02:14:19.8543739Z</startTime>
+  <endTime>2026-04-25T02:14:24.0077768Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>True</is_readonly>
+  <containerId>cff06e6497aa</containerId>
+  <buildSummary />
+</deployment>

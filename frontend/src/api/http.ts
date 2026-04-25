@@ -13,6 +13,16 @@ type AuthHooks = {
 let getToken: () => string | null = () => null
 let onUnauthorized: () => void = () => { }
 
+const apiBaseUrl = (import.meta.env.VITE_API_URL ?? '').trim().replace(/\/+$/, '')
+
+function resolveUrl(url: string): string {
+    if (!apiBaseUrl || /^https?:\/\//i.test(url)) {
+        return url
+    }
+
+    return url.startsWith('/') ? `${apiBaseUrl}${url}` : `${apiBaseUrl}/${url}`
+}
+
 export function setAuthHooks(hooks: AuthHooks): void {
     getToken = hooks.getToken
     onUnauthorized = hooks.onUnauthorized
@@ -43,7 +53,7 @@ export async function request<T>(url: string, init?: RequestInit): Promise<T> {
         headers.set('Authorization', `Bearer ${token}`)
     }
 
-    const response = await fetch(url, { ...init, headers })
+    const response = await fetch(resolveUrl(url), { ...init, headers })
 
     if (response.status === 401) {
         onUnauthorized()

@@ -1,0 +1,275 @@
+2026-04-25T02:14:34.4591797Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-25T02:14:35.9437395Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-25T02:14:35.9439681Z Container start method called.
+2026-04-25T02:14:36.0341421Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:14:36.0346149Z Establishing network.
+2026-04-25T02:14:36.0827103Z Pulling image: appsvc/dotnetcore:8.0_20260115.4.tuxprod.
+2026-04-25T02:14:36.3840654Z Image appsvc/dotnetcore:8.0_20260115.4.tuxprod is pulled from registry 10.1.0.6:13209
+2026-04-25T02:14:36.3848753Z Container is starting.
+2026-04-25T02:14:36.3850724Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:14:36.3852238Z Establishing user namespace if not established already.
+2026-04-25T02:14:36.3853672Z Establishing network if not established already.
+2026-04-25T02:14:36.3855101Z Mounting volumes.
+2026-04-25T02:14:36.3860860Z Nested mountpoint 
+2026-04-25T02:14:36.3907145Z Nested mountpoint volatile/logs
+2026-04-25T02:14:36.4061730Z Nested mountpoint 
+2026-04-25T02:14:36.4190700Z Nested mountpoint 
+2026-04-25T02:14:36.4206519Z Nested mountpoint 
+2026-04-25T02:14:36.5024069Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for marketplace-backened-nhi2. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-25T02:14:36.5027204Z Creating container.
+2026-04-25T02:14:36.5033453Z Creating pipes for streaming container io.
+2026-04-25T02:14:36.5036500Z Creating stdout named pipe at /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stdout_1d04e947e130498baa29e45f00893599.
+2026-04-25T02:14:36.5047401Z Successfully created stdout named pipe at: /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stdout_1d04e947e130498baa29e45f00893599.
+2026-04-25T02:14:36.5061917Z Opening named pipe /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stdout_1d04e947e130498baa29e45f00893599 for reading in non-blocking mode.
+2026-04-25T02:14:36.5073998Z Successfully opened named pipe: /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stdout_1d04e947e130498baa29e45f00893599.
+2026-04-25T02:14:36.5080639Z Successfully removed non-blocking flag from /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stdout_1d04e947e130498baa29e45f00893599.
+2026-04-25T02:14:36.5082477Z Creating stderr named pipe at /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stderr_ff4e3e4038bc4c78834762393790d304.
+2026-04-25T02:14:36.5084250Z Successfully created stderr named pipe at: /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stderr_ff4e3e4038bc4c78834762393790d304.
+2026-04-25T02:14:36.5085306Z Opening named pipe /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stderr_ff4e3e4038bc4c78834762393790d304 for reading in non-blocking mode.
+2026-04-25T02:14:36.5086487Z Successfully opened named pipe: /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stderr_ff4e3e4038bc4c78834762393790d304.
+2026-04-25T02:14:36.5087670Z Successfully removed non-blocking flag from /podr/container/pipe/816a9cab64a1_marketplace-backened-nhi2/stderr_ff4e3e4038bc4c78834762393790d304.
+2026-04-25T02:14:36.5089409Z Creating container with image: appsvc/dotnetcore:8.0_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod
+2026-04-25T02:14:37.0265761Z Starting container: 816a9cab64a1_marketplace-backened-nhi2.
+2026-04-25T02:14:37.0480597Z Starting watchers and probes.
+2026-04-25T02:14:37.0489130Z Starting metrics collection.
+2026-04-25T02:14:37.0505922Z Container is running.
+2026-04-25T02:14:37.0506909Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:14:37.0958099Z Container start method finished after 1151 ms.
+2026-04-25T02:14:37.0961376Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:14:37.1057482Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-25T02:14:46.2259898Z Container has finished running with exit code: 150.
+2026-04-25T02:14:46.2297082Z Container is terminating. Grace period: 5 seconds.
+2026-04-25T02:14:46.2348361Z Stop and delete container. Retry count = 0
+2026-04-25T02:14:46.2360689Z Stopping container: 816a9cab64a1_marketplace-backened-nhi2.
+2026-04-25T02:14:46.2693324Z Deleting container: 816a9cab64a1_marketplace-backened-nhi2. Retry count = 0
+2026-04-25T02:14:46.4665717Z Container spec TerminationMessagePolicy  path 
+2026-04-25T02:14:46.4689191Z Container is terminated. Total time elapsed: 238 ms.
+2026-04-25T02:14:46.4691705Z Site container: marketplace-backened-nhi2 terminated during site startup.
+2026-04-25T02:14:46.4705448Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:14:46.5044623Z Site startup probe failed after 9.3787462 seconds.
+2026-04-25T02:14:46.5947106Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:14:46.5991717Z Failed to start site. Revert by stopping site.
+2026-04-25T02:14:46.6188321Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:14:46.6238388Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:14:46.6249101Z Site: marketplace-backened-nhi2 stopped.
+2026-04-25T02:14:46.6329143Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:14:46.7764876Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:14:46.8482138Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:14:46 (UTC), DetailsLevel: ERR
+2026-04-25T02:14:46.8968139Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:14:46 (UTC), DetailsLevel: ERR
+2026-04-25T02:14:52.0262769Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:14:46 (UTC), DetailsLevel: ERR
+2026-04-25T02:14:52.3270842Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:14:46 (UTC), DetailsLevel: ERR
+2026-04-25T02:14:52.3272164Z Container start method called.
+2026-04-25T02:14:52.3272643Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:14:52.3273729Z Establishing network.
+2026-04-25T02:14:52.3274843Z Pulling image: appsvc/dotnetcore:8.0_20260115.4.tuxprod.
+2026-04-25T02:14:52.4749590Z Container is starting.
+2026-04-25T02:14:52.4755011Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:14:52.4758933Z Establishing user namespace if not established already.
+2026-04-25T02:14:52.4764347Z Establishing network if not established already.
+2026-04-25T02:14:52.4767741Z Mounting volumes.
+2026-04-25T02:14:52.4774792Z Nested mountpoint 
+2026-04-25T02:14:52.4807178Z Nested mountpoint volatile/logs
+2026-04-25T02:14:52.4838659Z Nested mountpoint 
+2026-04-25T02:14:52.4845439Z Nested mountpoint 
+2026-04-25T02:14:52.4874827Z Nested mountpoint 
+2026-04-25T02:14:52.6039061Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for marketplace-backened-nhi2. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-25T02:14:52.6042205Z Creating container.
+2026-04-25T02:14:52.6043710Z Creating pipes for streaming container io.
+2026-04-25T02:14:52.6045104Z Creating stdout named pipe at /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stdout_f6c6469a02204ac49e22309a25987b0e.
+2026-04-25T02:14:52.6047748Z Successfully created stdout named pipe at: /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stdout_f6c6469a02204ac49e22309a25987b0e.
+2026-04-25T02:14:52.6048967Z Opening named pipe /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stdout_f6c6469a02204ac49e22309a25987b0e for reading in non-blocking mode.
+2026-04-25T02:14:52.6051018Z Successfully opened named pipe: /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stdout_f6c6469a02204ac49e22309a25987b0e.
+2026-04-25T02:14:52.6052344Z Successfully removed non-blocking flag from /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stdout_f6c6469a02204ac49e22309a25987b0e.
+2026-04-25T02:14:52.6063357Z Creating stderr named pipe at /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stderr_adba782d0b1d4f5a8ee3e1c9922732f0.
+2026-04-25T02:14:52.6065176Z Successfully created stderr named pipe at: /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stderr_adba782d0b1d4f5a8ee3e1c9922732f0.
+2026-04-25T02:14:52.6066454Z Opening named pipe /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stderr_adba782d0b1d4f5a8ee3e1c9922732f0 for reading in non-blocking mode.
+2026-04-25T02:14:52.6067748Z Successfully opened named pipe: /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stderr_adba782d0b1d4f5a8ee3e1c9922732f0.
+2026-04-25T02:14:52.6068901Z Successfully removed non-blocking flag from /podr/container/pipe/2f456b661a92_marketplace-backened-nhi2/stderr_adba782d0b1d4f5a8ee3e1c9922732f0.
+2026-04-25T02:14:52.6075121Z Creating container with image: appsvc/dotnetcore:8.0_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod
+2026-04-25T02:14:52.8443279Z Starting container: 2f456b661a92_marketplace-backened-nhi2.
+2026-04-25T02:14:52.8646344Z Starting watchers and probes.
+2026-04-25T02:14:52.8648808Z Starting metrics collection.
+2026-04-25T02:14:52.8651209Z Container is running.
+2026-04-25T02:14:52.8652086Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:14:52.8811281Z Container start method finished after 553 ms.
+2026-04-25T02:14:52.8876249Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:14:52.8877005Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-25T02:15:00.0979631Z Container has finished running with exit code: 150.
+2026-04-25T02:15:00.0981136Z Container is terminating. Grace period: 5 seconds.
+2026-04-25T02:15:00.0988127Z Stop and delete container. Retry count = 0
+2026-04-25T02:15:00.0989223Z Stopping container: 2f456b661a92_marketplace-backened-nhi2.
+2026-04-25T02:15:00.3101495Z Deleting container: 2f456b661a92_marketplace-backened-nhi2. Retry count = 0
+2026-04-25T02:15:00.4753866Z Container spec TerminationMessagePolicy  path 
+2026-04-25T02:15:00.4755810Z Container is terminated. Total time elapsed: 377 ms.
+2026-04-25T02:15:00.4757236Z Site container: marketplace-backened-nhi2 terminated during site startup.
+2026-04-25T02:15:00.4758148Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:14:46, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:15:00.4773481Z Site startup probe failed after 7.5889302 seconds.
+2026-04-25T02:15:00.5407599Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:15:00.5453239Z Failed to start site. Revert by stopping site.
+2026-04-25T02:15:00.5455236Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:15:00.5458173Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:15:00.5458362Z Site: marketplace-backened-nhi2 stopped.
+2026-04-25T02:15:00.5539334Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:15:00.6556731Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:15:00.7179925Z Site: marketplace-backened-nhi2 will be blocked for 1 minutes till 04/25/2026 02:16:00
+2026-04-25T02:15:00.7182270Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: marketplace-backened-nhi2 will be blocked for 1 minutes till 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:00.7492926Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:15:00 (UTC), DetailsLevel: WARN
+2026-04-25T02:15:00.7725532Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:15:00 (UTC), DetailsLevel: WARN
+2026-04-25T02:15:06.3372514Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:06.3372860Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:11.4011690Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:11.4011995Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:16.4517712Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:16.4518042Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:21.5241779Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:21.5242078Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:26.5754062Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:26.5754863Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:31.6309968Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:31.6310268Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:36.8995634Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:36.8996474Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:41.9464659Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:41.9464955Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:47.2546105Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:47.2546458Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:52.3027334Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:52.3027630Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:15:57.4972367Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:15:57.4972637Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:00.7187731Z Site: marketplace-backened-nhi2 is unblocked.
+2026-04-25T02:16:02.5758230Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:16:03.9781881Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:16:00, DetailsLevel: WARN
+2026-04-25T02:16:03.9783327Z Container start method called.
+2026-04-25T02:16:03.9784764Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:16:03.9787011Z Establishing network.
+2026-04-25T02:16:03.9788470Z Pulling image: appsvc/dotnetcore:8.0_20260115.4.tuxprod.
+2026-04-25T02:16:04.4712675Z Container is starting.
+2026-04-25T02:16:04.4713535Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:16:04.4714821Z Establishing user namespace if not established already.
+2026-04-25T02:16:04.4716300Z Establishing network if not established already.
+2026-04-25T02:16:04.4717781Z Mounting volumes.
+2026-04-25T02:16:04.4719650Z Nested mountpoint 
+2026-04-25T02:16:04.4757568Z Nested mountpoint volatile/logs
+2026-04-25T02:16:04.4797114Z Nested mountpoint 
+2026-04-25T02:16:04.4803564Z Nested mountpoint 
+2026-04-25T02:16:04.4823392Z Nested mountpoint 
+2026-04-25T02:16:04.5667456Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for marketplace-backened-nhi2. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-25T02:16:04.5668741Z Creating container.
+2026-04-25T02:16:04.5669665Z Creating pipes for streaming container io.
+2026-04-25T02:16:04.5670822Z Creating stdout named pipe at /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stdout_b54d385271314f7eb5fca2ed61a39d8f.
+2026-04-25T02:16:04.5673006Z Successfully created stdout named pipe at: /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stdout_b54d385271314f7eb5fca2ed61a39d8f.
+2026-04-25T02:16:04.5674059Z Opening named pipe /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stdout_b54d385271314f7eb5fca2ed61a39d8f for reading in non-blocking mode.
+2026-04-25T02:16:04.5675372Z Successfully opened named pipe: /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stdout_b54d385271314f7eb5fca2ed61a39d8f.
+2026-04-25T02:16:04.5676361Z Successfully removed non-blocking flag from /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stdout_b54d385271314f7eb5fca2ed61a39d8f.
+2026-04-25T02:16:04.5688267Z Creating stderr named pipe at /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stderr_ed3bc0f64d0c4fc587e2b1fb86202004.
+2026-04-25T02:16:04.5691821Z Successfully created stderr named pipe at: /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stderr_ed3bc0f64d0c4fc587e2b1fb86202004.
+2026-04-25T02:16:04.5693640Z Opening named pipe /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stderr_ed3bc0f64d0c4fc587e2b1fb86202004 for reading in non-blocking mode.
+2026-04-25T02:16:04.5695663Z Successfully opened named pipe: /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stderr_ed3bc0f64d0c4fc587e2b1fb86202004.
+2026-04-25T02:16:04.5696907Z Successfully removed non-blocking flag from /podr/container/pipe/97bc0a530a4e_marketplace-backened-nhi2/stderr_ed3bc0f64d0c4fc587e2b1fb86202004.
+2026-04-25T02:16:04.5699035Z Creating container with image: appsvc/dotnetcore:8.0_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod
+2026-04-25T02:16:04.8557171Z Starting container: 97bc0a530a4e_marketplace-backened-nhi2.
+2026-04-25T02:16:04.8769358Z Starting watchers and probes.
+2026-04-25T02:16:04.8865501Z Starting metrics collection.
+2026-04-25T02:16:04.8876227Z Container is running.
+2026-04-25T02:16:04.8903631Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:16:04.9561826Z Container start method finished after 977 ms.
+2026-04-25T02:16:04.9563915Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:16:04.9564211Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-25T02:16:11.9446875Z Container has finished running with exit code: 150.
+2026-04-25T02:16:11.9448532Z Container is terminating. Grace period: 5 seconds.
+2026-04-25T02:16:11.9499064Z Stop and delete container. Retry count = 0
+2026-04-25T02:16:11.9500011Z Stopping container: 97bc0a530a4e_marketplace-backened-nhi2.
+2026-04-25T02:16:12.2096115Z Deleting container: 97bc0a530a4e_marketplace-backened-nhi2. Retry count = 0
+2026-04-25T02:16:14.1127474Z Container spec TerminationMessagePolicy  path 
+2026-04-25T02:16:14.1129652Z Container is terminated. Total time elapsed: 2167 ms.
+2026-04-25T02:16:14.1131573Z Site container: marketplace-backened-nhi2 terminated during site startup.
+2026-04-25T02:16:14.1132364Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:15:00, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:16:14.1146870Z Site startup probe failed after 9.1534476 seconds.
+2026-04-25T02:16:14.1662906Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:16:14.1702470Z Failed to start site. Revert by stopping site.
+2026-04-25T02:16:14.1703574Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:16:14.1706409Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:16:14.1706594Z Site: marketplace-backened-nhi2 stopped.
+2026-04-25T02:16:14.1737577Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:16:14.2679367Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:16:14.3196656Z Site: marketplace-backened-nhi2 will be blocked for 1 minutes till 04/25/2026 02:17:14
+2026-04-25T02:16:14.3201817Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: marketplace-backened-nhi2 will be blocked for 1 minutes till 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:14.3208684Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:16:14 (UTC), DetailsLevel: WARN
+2026-04-25T02:16:14.3413618Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/25/2026 02:16:14 (UTC), DetailsLevel: WARN
+2026-04-25T02:16:19.4034426Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:19.4037201Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:24.4543359Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:24.4544348Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:31.2721197Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:31.2721483Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:36.3124047Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:36.3124320Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:41.3983476Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:41.3983783Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:46.4510222Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:46.4510516Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:51.5095213Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:51.5095502Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:16:56.5756255Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:16:56.5757147Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:17:01.6207185Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:17:01.6207509Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:17:07.0228474Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:17:07.0228744Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:17:12.2158271Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:17:12.2158624Z Start site prohibitted because the site is being blocked.
+2026-04-25T02:17:14.3542662Z Site: marketplace-backened-nhi2 is unblocked.
+2026-04-25T02:17:17.4483495Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:17:17.7458933Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/25/2026 02:17:14, DetailsLevel: WARN
+2026-04-25T02:17:17.7465846Z Container start method called.
+2026-04-25T02:17:17.7466420Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:17:17.7467444Z Establishing network.
+2026-04-25T02:17:17.7469170Z Pulling image: appsvc/dotnetcore:8.0_20260115.4.tuxprod.
+2026-04-25T02:17:17.9512125Z Container is starting.
+2026-04-25T02:17:17.9514026Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for marketplace-backened-nhi2., DetailsLevel: INFO
+2026-04-25T02:17:17.9515829Z Establishing user namespace if not established already.
+2026-04-25T02:17:17.9517675Z Establishing network if not established already.
+2026-04-25T02:17:17.9519790Z Mounting volumes.
+2026-04-25T02:17:17.9522221Z Nested mountpoint 
+2026-04-25T02:17:17.9584383Z Nested mountpoint volatile/logs
+2026-04-25T02:17:17.9642811Z Nested mountpoint 
+2026-04-25T02:17:17.9697421Z Nested mountpoint 
+2026-04-25T02:17:17.9707354Z Nested mountpoint 
+2026-04-25T02:17:18.0967044Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for marketplace-backened-nhi2. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-25T02:17:18.0968848Z Creating container.
+2026-04-25T02:17:18.0972810Z Creating pipes for streaming container io.
+2026-04-25T02:17:18.0976145Z Creating stdout named pipe at /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stdout_b07ea23bef954bce87dbccb743452366.
+2026-04-25T02:17:18.0981154Z Successfully created stdout named pipe at: /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stdout_b07ea23bef954bce87dbccb743452366.
+2026-04-25T02:17:18.0983030Z Opening named pipe /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stdout_b07ea23bef954bce87dbccb743452366 for reading in non-blocking mode.
+2026-04-25T02:17:18.0984950Z Successfully opened named pipe: /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stdout_b07ea23bef954bce87dbccb743452366.
+2026-04-25T02:17:18.0987896Z Successfully removed non-blocking flag from /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stdout_b07ea23bef954bce87dbccb743452366.
+2026-04-25T02:17:18.0990534Z Creating stderr named pipe at /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stderr_c76e49820cfc452d9085e1bc2ba804eb.
+2026-04-25T02:17:18.0992178Z Successfully created stderr named pipe at: /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stderr_c76e49820cfc452d9085e1bc2ba804eb.
+2026-04-25T02:17:18.0993585Z Opening named pipe /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stderr_c76e49820cfc452d9085e1bc2ba804eb for reading in non-blocking mode.
+2026-04-25T02:17:18.0994902Z Successfully opened named pipe: /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stderr_c76e49820cfc452d9085e1bc2ba804eb.
+2026-04-25T02:17:18.0996127Z Successfully removed non-blocking flag from /podr/container/pipe/c26471486ba4_marketplace-backened-nhi2/stderr_c76e49820cfc452d9085e1bc2ba804eb.
+2026-04-25T02:17:18.0997617Z Creating container with image: appsvc/dotnetcore:8.0_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/dotnetcore:8.0_20260115.4.tuxprod
+2026-04-25T02:17:18.5909773Z Starting container: c26471486ba4_marketplace-backened-nhi2.
+2026-04-25T02:17:18.6173147Z Starting watchers and probes.
+2026-04-25T02:17:18.6177008Z Starting metrics collection.
+2026-04-25T02:17:18.6178648Z Container is running.
+2026-04-25T02:17:18.6179490Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:17:18.6712178Z Container start method finished after 922 ms.
+2026-04-25T02:17:18.6715629Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container marketplace-backened-nhi2 successfully created and is running., DetailsLevel: INFO
+2026-04-25T02:17:18.6716005Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-25T02:17:25.3238662Z Container has finished running with exit code: 150.
+2026-04-25T02:17:25.3240443Z Container is terminating. Grace period: 5 seconds.
+2026-04-25T02:17:25.3244594Z Stop and delete container. Retry count = 0
+2026-04-25T02:17:25.3245797Z Stopping container: c26471486ba4_marketplace-backened-nhi2.
+2026-04-25T02:17:25.3742304Z Deleting container: c26471486ba4_marketplace-backened-nhi2. Retry count = 0
+2026-04-25T02:17:25.5320856Z Container spec TerminationMessagePolicy  path 
+2026-04-25T02:17:25.5325475Z Container is terminated. Total time elapsed: 208 ms.
+2026-04-25T02:17:25.5328571Z Site container: marketplace-backened-nhi2 terminated during site startup.
+2026-04-25T02:17:25.5329737Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:16:14, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:17:25.5343085Z Site startup probe failed after 6.8621574 seconds.
+2026-04-25T02:17:25.6098040Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:17:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:17:25.6110574Z Failed to start site. Revert by stopping site.
+2026-04-25T02:17:25.6111283Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:17:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:17:25.6113422Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/25/2026 02:17:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: marketplace-backened-nhi2 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-25T02:17:25.6113588Z Site: marketplace-backened-nhi2 stopped.

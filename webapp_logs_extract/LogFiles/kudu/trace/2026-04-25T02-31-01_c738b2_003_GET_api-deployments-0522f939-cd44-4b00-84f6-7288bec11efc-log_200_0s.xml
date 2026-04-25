@@ -1,0 +1,7 @@
+<step title="Incoming Request" date="2026-04-25T02:31:01.931" instance="c738b2" url="/api/deployments/0522f939-cd44-4b00-84f6-7288bec11efc/log" method="GET" type="request" pid="831,1,5" Accept="*/*" Host="marketplace-backened-nhi2-gxb5gpcthkcqcja9.scm.canadacentral-01.azurewebsites.net" User-Agent="AZURECLI/2.85.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." x-ms-client-request-id="ad80e375-404e-11f1-b15b-8ce9ee5ad3ad" X-ARR-LOG-ID="ad80e375-404e-11f1-b15b-8ce9ee5ad3ad" CLIENT-IP="65.24.53.207:64497" X-SITE-DEPLOYMENT-ID="marketplace-backened-nhi2" WAS-DEFAULT-HOSTNAME="marketplace-backened-nhi2-gxb5gpcthkcqcja9.scm.canadacentral-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/0522f939-cd44-4b00-84f6-7288bec11efc/log" X-Client-IP="65.24.53.207" X-Client-Port="64497" >
+  <step title="Cleanup Xml Logs" date="2026-04-25T02:31:01.934" /><!-- duration: 7ms -->
+  <step title="DeploymentService.GetLogEntry" date="2026-04-25T02:31:01.999" >
+    <step title="DeploymentManager.GetLogEntries(id:0522f939-cd44-4b00-84f6-7288bec11efc)" date="2026-04-25T02:31:02.004" /><!-- duration: 27ms -->
+  </step><!-- duration: 41ms -->
+  <step title="Outgoing response" date="2026-04-25T02:31:02.050" type="response" statusCode="200" statusText="OK" /><!-- duration: 17ms -->
+</step><!-- duration: 144ms -->
